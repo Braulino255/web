@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de HTML: Encabezados, Párrafos, Listas y más</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculación al archivo de estilos -->
+</head>
+<body>
+    <header>
+        <h1>Guía para Aprender HTML</h1>
+        <p>En esta guía aprenderás sobre los principales elementos HTML para crear páginas web.</p>
+    </header>
+
+    <!-- Tema 1: Encabezados -->
+    <section id="encabezados">
+        <h2>1. Encabezados</h2>
+        <p>Los encabezados son usados para definir títulos en una página web. HTML ofrece 6 niveles de encabezados, siendo <code>&lt;h1&gt;</code> el más grande y <code>&lt;h6&gt;</code> el más pequeño.</p>
+        <pre><code>&lt;h1&gt;Este es un encabezado de nivel 1&lt;/h1&gt;</code></pre>
+        <p>Ejemplo:</p>
+        <h1>Encabezado de nivel 1</h1>
+        <h2>Encabezado de nivel 2</h2>
+        <h3>Encabezado de nivel 3</h3>
+    </section>
+
+    <!-- Tema 2: Párrafos -->
+    <section id="parrafos">
+        <h2>2. Párrafos</h2>
+        <p>Los párrafos en HTML se definen con la etiqueta <code>&lt;p&gt;</code>. Cada párrafo debe estar dentro de esta etiqueta para separarlos y organizar el contenido de manera adecuada.</p>
+        <pre><code>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</code></pre>
+        <p>Ejemplo de un párrafo:</p>
+        <p>Este es un párrafo de ejemplo que muestra cómo se usa la etiqueta <code>&lt;p&gt;</code> en HTML.</p>
+    </section>
+
+    <!-- Tema 3: Formateo de texto -->
+    <section id="formateo-texto">
+        <h2>3. Formateo de texto</h2>
+        <p>HTML ofrece etiquetas para aplicar formato al texto, como <code>&lt;b&gt;</code> para negrita, <code>&lt;i&gt;</code> para cursiva y <code>&lt;u&gt;</code> para subrayado.</p>
+        <pre><code>&lt;b&gt;Texto en negrita&lt;/b&gt;</code></pre>
+        <p>Ejemplo de formateo:</p>
+        <p><b>Texto en negrita</b>, <i>Texto en cursiva</i> y <u>Texto subrayado</u>.</p>
+    </section>
+
+    <!-- Tema 4: Fuentes -->
+    <section id="fuentes">
+        <h2>4. Fuentes</h2>
+        <p>Para cambiar la fuente del texto en HTML, se puede usar la propiedad <code>font-family</code> dentro de CSS. Puedes usar fuentes predeterminadas o fuentes personalizadas que estén disponibles en tu servidor o mediante servicios como Google Fonts.</p>
+        <pre><code>p {
+    font-family: 'Arial', sans-serif;
+}</code></pre>
+        <p>Ejemplo de fuente personalizada:</p>
+        <p style="font-family: 'Courier New', Courier, monospace;">Este párrafo usa una fuente diferente: Courier New.</p>
+    </section>
+
+    <!-- Tema 5: Listas -->
+    <section id="listas">
+        <h2>5. Los tres tipos principales de listas en HTML</h2>
+        <p>HTML tiene tres tipos principales de listas: numeradas, sin numerar y glosarios.</p>
+
+        <h3>5.1. Listas numeradas</h3>
+        <p>Las listas numeradas se definen con <code>&lt;ol&gt;</code>, y cada ítem de la lista se coloca dentro de una etiqueta <code>&lt;li&gt;</code>.</p>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;Primer elemento&lt;/li&gt;
+    &lt;li&gt;Segundo elemento&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        <p>Ejemplo de lista numerada:</p>
+        <ol>
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+        </ol>
+
+        <h3>5.2. Listas sin numerar</h3>
+        <p>Las listas sin numerar se definen con <code>&lt;ul&gt;</code>.</p>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Elemento sin numerar&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <p>Ejemplo de lista sin numerar:</p>
+        <ul>
+            <li>Elemento sin numerar</li>
+            <li>Otro elemento sin numerar</li>
+        </ul>
+
+        <h3>5.3. Listas de glosario</h3>
+        <p>Las listas de glosario se crean con <code>&lt;dl&gt;</code> (definition list), <code>&lt;dt&gt;</code> para los términos y <code>&lt;dd&gt;</code> para las definiciones.</p>
+        <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Lenguaje de marcado para estructurar páginas web&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+        <p>Ejemplo de lista de glosario:</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado para estructurar páginas web</dd>
+            <dt>CSS</dt>
+            <dd>Lenguaje para dar estilo a las páginas web</dd>
+        </dl>
+    </section>
+
+    <!-- Tema 6: Manejo de Gráficas -->
+    <section id="graficas">
+        <h2>6. Manejo de Gráficas en HTML</h2>
+
+        <h3>6.1. Alineamiento de la gráfica en la página</h3>
+        <p>Las imágenes se alinean en la página utilizando las propiedades de CSS como <code>text-align</code> o <code>margin</code>.</p>
+        <pre><code>img {
+    display: block;
+    margin: 0 auto;
+}</code></pre>
+        <p>Ejemplo de alineación centrada:</p>
+        <img src="images/graficas13.png" alt="Gráfica centrada">
+
+        <h3>6.2. Alineamiento de texto en relación a la gráfica</h3>
+        <p>Se puede alinear el texto alrededor de la gráfica usando la propiedad <code>float</code>.</p>
+        <pre><code>img {
+    float: left;
+    margin-right: 20px;
+}</code></pre>
+        <p>Ejemplo de texto alrededor de una imagen:</p>
+        <img src="https://via.placeholder.com/150" alt="Gráfica flotante" style="float: left; margin-right: 20px;">
+        <p>Este texto está alineado al lado de la imagen que se encuentra a la izquierda.</p>
+
+        <h3>6.3. Espacios alrededor de la gráfica y tamaño</h3>
+        <p>Para controlar los márgenes alrededor de la gráfica, puedes usar <code>margin</code> y <code>padding</code>.</p>
+        <pre><code>img {
+    margin: 20px;
+    width: 100px;
+}</code></pre>
+        <p>Ejemplo de gráfica con espacio:</p>
+        <img src="images/barraflotante.png" alt="Gráfica con márgenes" style="margin: 20px;">
+
+        <h3>6.4. Gráfica de fondo para una página</h3>
+        <p>Para poner una imagen como fondo de una página, se utiliza CSS en el selector <code>body</code>.</p>
+        <pre><code>body {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+}</code></pre>
+        <p>Ejemplo de fondo:</p>
+        <img src="images/fondoimagen.jpg" alt="Gráfica con márgenes" style="margin: 20px;">
+    </section>
+
+    <!-- Tema 7: Enlaces -->
+    <section id="enlaces">
+        <h2>7. Enlaces en HTML</h2>
+
+        <h3>7.1. A otro sitio web</h3>
+        <p>Los enlaces se crean con la etiqueta <code>&lt;a&gt;</code> y el atributo <code>href</code>. Un enlace externo puede apuntar a otro sitio web.</p>
+        <pre><code>&lt;a href="https://www.ejemplo.com"&gt;Visita Ejemplo&lt
